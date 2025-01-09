@@ -1,2 +1,1 @@
 FLASK_APP=volk.py
-FLASK_ENV=development
