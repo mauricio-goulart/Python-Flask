@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header com logotipo e título estilizado */
+.header {
+    text-align: center;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header h1 {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
+}
+.header img {
+    width: 35px; /* Tamanho ajustado para a logo */
+    height: auto;
+}
+
+/* Estilização da barra de navegação no estilo Apple */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Mais espaçamento entre os itens */
+    padding: 15px 0;
+    background-color: #f5f5f7;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600; /* Aumenta o destaque do texto */
+    color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    transition: all 0.3s ease;
+    padding: 5px 10px; /* Adiciona um pouco de espaço ao redor */
+    border-radius: 10px; /* Bordas arredondadas para o hover */
+}
+
+.nav a:hover {
+    background-color: #e3e3e8; /* Fundo discreto ao passar o mouse */
+    color: #0071e3; /* Azul no estilo Apple para o texto */
+    transform: translateY(-2px); /* Eleva levemente o item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil no hover */
+}
+
+/* Ícones na navegação */
+.nav a i {
+    font-size: 18px;
+    color: #6e6e73; /* Cor neutra para os ícones */
+    transition: color 0.3s ease;
+}
+
+.nav a:hover i {
+    color: #0071e3; /* Azul no estilo Apple para o ícone ao passar o mouse */
+}
+
+
+/* Estilização do botão no estilo Apple */
+.card-content button {
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-content button:active {
+    background-color: #004a94;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* Estilo do card de produto */
+.card-container {
+    display: flex;
+    flex-direction: column; /* Cards empilhados verticalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    align-items: center; /* Centralizar os cards */
+}
+
+/* Tornar o layout responsivo */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row; /* Alinhar cards lado a lado em telas maiores */
+        justify-content: space-between; /* Espaço igual entre os cards */
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 300px; /* Limitar largura em telas maiores */
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    color: #6e6e73;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d1d1f;
+    margin: 10px 0;
+}
+
+.card-content .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0071e3;
+}
